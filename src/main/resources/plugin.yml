@@ -1,0 +1,20 @@
+name: HardcoreRevive
+version: ${project.version}
+main: dev.hardcore.revive.HardcoreRevive
+api-version: '26.3'
+description: 하드코어 부활 붕대
+commands:
+  revive:
+    description: 죽은 플레이어를 붕대 없이 부활시킵니다 (관리자)
+    usage: /부활 <이름|목록|전체>
+    aliases: [부활]
+    permission: hardcorerevive.admin
+  reviveitem:
+    description: 부활 붕대를 받습니다 (관리자)
+    usage: /부활붕대 [이름]
+    aliases: [부활붕대]
+    permission: hardcorerevive.admin
+permissions:
+  hardcorerevive.admin:
+    description: 부활 관리자 명령어
+    default: op
